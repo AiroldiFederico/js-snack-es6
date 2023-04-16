@@ -108,3 +108,11 @@ squadre.forEach(squadra => {
 
 
 console.log(squadre);
+
+
+let squadre2 = squadre.map(element => {
+  let {nome, falliSubiti} = element;
+  return {nome: element.nome, falliSubiti: element.falliSubiti};
+});
+
+console.log(squadre2);
