@@ -100,3 +100,11 @@ let squadre = [
 ];
 
 
+
+squadre.forEach(squadra => {
+  squadra.puntiFatti = Math.floor(Math.random() * 100);
+  squadra.falliSubiti = Math.floor(Math.random() * (10 - 0 + 1)) + 0;
+});
+
+
+console.log(squadre);
