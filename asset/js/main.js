@@ -22,3 +22,35 @@ La funzione ritornerà un nuovo array con i valori che hanno la posizione compre
 Usiamo i nuovi metodi degli array foreach o filter.
 
 */
+
+
+
+
+// SNACK 1
+
+
+
+let Biciclette = [
+  {
+    nome: BMX,
+    peso: 30,
+  },
+  {
+    nome: Mountainbike,
+    peso: 35,
+  },
+  {
+    nome: Trial,
+    peso: 25,
+  },
+  {
+    nome: Monociclo,
+    peso: 10,
+  },
+  {
+    nome: ElectricBike,
+    peso: 85,
+  }
+];
+
+
