@@ -53,4 +53,6 @@ let Biciclette = [
   }
 ];
 
+const {nome, peso} = element;
+
 
