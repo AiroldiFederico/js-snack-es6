@@ -22,3 +22,6 @@ h1 , h2, h4 {
     color: var(--color-4);
 }
 
+p {
+    color: var(--color-5);
+}

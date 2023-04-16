@@ -32,27 +32,55 @@ Usiamo i nuovi metodi degli array foreach o filter.
 
 let Biciclette = [
   {
-    nome: BMX,
+    nome: 'BMX',
     peso: 30,
   },
   {
-    nome: Mountainbike,
+    nome: 'Mountainbike',
     peso: 35,
   },
   {
-    nome: Trial,
+    nome: 'Trial',
     peso: 25,
   },
   {
-    nome: Monociclo,
+    nome: 'Monociclo',
     peso: 10,
   },
   {
-    nome: ElectricBike,
+    nome: 'ElectricBike',
     peso: 85,
   }
 ];
 
-const {nome, peso} = element;
+let div = document.querySelector('div');
 
 
+function minorPeso() {
+  
+  let pesoMinore = Biciclette[0];
+  
+  Biciclette.forEach(element => {
+    
+    const {nome, peso} = element;
+
+    if(element.peso < pesoMinore.peso) {
+      pesoMinore = element;
+    }
+  });
+
+  return pesoMinore;
+}
+
+
+
+let biciLeggera = minorPeso();
+console.log(biciLeggera);
+
+
+div.innerHTML = `
+
+<p> LA BICI PIÙ LEGGERA È: </p>
+<p> ${biciLeggera.nome} e pesa ${biciLeggera.peso}Kg </p>
+
+`
