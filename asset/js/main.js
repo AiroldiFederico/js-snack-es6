@@ -116,3 +116,21 @@ let squadre2 = squadre.map(element => {
 });
 
 console.log(squadre2);
+
+
+//-----------------------------------------------------------
+// SNACK 3
+
+let nomi = ['alberto', 'michele', 'angelo', 'simone', 'francesco', 'federico'];
+
+function filterArray(array, a, b) {
+  let nomi2 = array.filter((element, index) => {
+    return index > a && index < b;
+  });
+  return nomi2;
+}
+
+
+let nomiFiltrati = filterArray(nomi, 1, 4);
+
+console.log(nomiFiltrati);
