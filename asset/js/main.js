@@ -25,7 +25,7 @@ Usiamo i nuovi metodi degli array foreach o filter.
 
 
 
-
+//-----------------------------------------------------------
 // SNACK 1
 
 
@@ -84,3 +84,19 @@ div.innerHTML = `
 <p> ${biciLeggera.nome} e pesa ${biciLeggera.peso}Kg </p>
 
 `
+
+
+
+//-----------------------------------------------------------
+// SNACK 2
+
+let squadre = [
+  {nome: 'blu', puntiFatti: 0, falliSubiti: 0},
+  {nome: 'rosso', puntiFatti: 0, falliSubiti: 0},
+  {nome: 'verde', puntiFatti: 0, falliSubiti: 0},
+  {nome: 'giallo', puntiFatti: 0, falliSubiti: 0},
+  {nome: 'viola', puntiFatti: 0, falliSubiti: 0},
+  {nome: 'marrone', puntiFatti: 0, falliSubiti: 0},
+];
+
+
